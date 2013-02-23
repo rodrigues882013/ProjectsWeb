@@ -3,33 +3,19 @@
 
 {{if 'message' in globals():}}
 <h3>{{=message}}</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis urna et augue porta dignissim. Quisque auctor arcu et lorem consequat sit amet faucibus nunc hendrerit. Nam eros orci, cursus ac sagittis porta, molestie sit amet turpis. Etiam sit amet sapien metus. Nam dapibus cursus justo porttitor varius. Quisque eleifend elit et lacus sodales consectetur. Ut non mi odio. Vivamus eu diam justo, ut faucibus nisi. Aenean vitae elementum est. Maecenas et ipsum ut sapien accumsan suscipit sed sit amet eros.
 
-<h4>{{=T('How did you get here?')}}</h4>
-<ol>
-  <li>{{=T('You are successfully running web2py')}}</li>
-  <li>{{=XML(T('You visited the url %s', A(request.env.path_info,_href=request.env.path_info)))}}</li>
-  <li>{{=XML(T('Which called the function %s located in the file %s',
-             (A(request.function+'()',_href='#'),
-              A('web2py/applications/%(application)s/controllers/%(controller)s.py'%request,
-               _href=URL('admin','default','peek', args=(request.application,'controllers',request.controller+'.py'))))))}}</li>
-  <li>{{=XML(T('The output of the file is a dictionary that was rendered by the view %s',
-           A('web2py/applications/%(application)s/views/%(controller)s/index.html'%request,
-           _href=URL('admin','default','peek',args=(request.application,'views',request.controller,'index.html')))))}}</li>
-  <li>{{=T('You can modify this application and adapt it to your needs')}}</li>
-</ol>
-{{elif 'content' in globals():}}
-{{=content}}
-{{else:}}
-{{=BEAUTIFY(response._vars)}}
+Suspendisse potenti. Nulla vel volutpat massa. Quisque vel odio sem, vel congue turpis. Etiam tincidunt consequat augue, at convallis tortor condimentum vitae. Donec a dui vel velit pharetra semper. Etiam adipiscing auctor volutpat. Etiam et augue orci, dapibus lacinia nibh. Quisque at erat in urna ornare rhoncus non non justo. Phasellus elementum faucibus dui a consectetur. Nam fringilla tortor porttitor tellus elementum placerat. Duis vestibulum lorem nec mi ornare in venenatis elit semper.
+
+Donec erat sapien, iaculis eget iaculis a, varius id lorem. Nulla facilisi. Sed commodo ligula ac massa suscipit sodales. Cras ut eros nisl. Nulla aliquet leo quis neque rutrum consectetur. Ut ante leo, bibendum eget bibendum nec, interdum at quam. Suspendisse tempor, dolor ut tempor pellentesque, dui nulla scelerisque est, sed pulvinar arcu nisi quis risus. Aenean mauris eros, dignissim id eleifend nec, faucibus in augue. Nam nec nisl eget neque scelerisque tincidunt a sagittis metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac sapien sit amet urna imperdiet facilisis et sit amet nisi.
+
+Nam interdum purus at libero vestibulum pretium. Nulla ornare vestibulum lectus quis sodales. Morbi semper, risus nec congue vestibulum, elit lorem suscipit lorem, non consectetur dui urna a leo. Vestibulum ipsum metus, congue sed pharetra sed, volutpat vitae mi. Duis lobortis eros tellus. Nam vel erat enim. Mauris faucibus est mi. Aliquam auctor feugiat ultrices. Morbi a libero purus, non faucibus nulla. Phasellus gravida urna vel velit facilisis eleifend. In et felis velit, sit amet porttitor dui. Integer lacinia sollicitudin iaculis. Nullam condimentum, massa nec sollicitudin placerat, velit tellus vestibulum nisl, at gravida ante mi iaculis neque.
+
+Nunc aliquam ipsum et tellus vehicula vel ultrices nunc fermentum. Duis vitae libero a dui molestie suscipit. Phasellus lorem nisi, pretium ac fringilla quis, lobortis quis nisl. Fusce vitae nulla at nunc interdum mollis. Morbi quis odio quis nunc sollicitudin iaculis. Cras sagittis convallis metus, nec sagittis augue malesuada non. Vivamus tincidunt augue vitae neque tristique gravida. Nulla vitae elit massa. Fusce sit amet velit eu turpis pretium porttitor. Sed turpis est, accumsan in bibendum sit amet, vestibulum gravida lacus. Nulla vitae massa sit amet mauris egestas pellentesque. Morbi ac diam vehicula urna molestie blandit eget ultricies orci. Quisque cursus imperdiet risus, sed pretium libero egestas ut. Nulla sit amet ante sit amet nunc tempus molestie et eget mi. Fusce metus neque, viverra id pharetra in, suscipit ac tellus.
+
+</p>
+
 {{pass}}
 
-{{block right_sidebar}}
-{{=A(T("Administrative Interface"), _href=URL('admin','default','index'), _class='btn',
-     _style='margin-top: 1em;')}}
-<h6>{{=T("Don't know what to do?")}}</h6>
-<ul>
-  <li>{{=A(T("Online examples"), _href=URL('examples','default','index'))}}</li>
-  <li><a href="http://web2py.com">web2py.com</a></li>
-  <li><a href="http://web2py.com/book">{{=T('Documentation')}}</a></li>
-</ul>
-{{end}}
+
+
